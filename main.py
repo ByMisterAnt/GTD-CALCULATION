@@ -53,18 +53,18 @@ class GTDcalc(MDApp):
         plt.clf()
         plotShow = MDApp.get_running_app().root.get_screen('result')
         plotShow.ids.expense_graph.clear_widgets()
-        
-        Mp = 1
-        H = 300
+
+        Mp = float(MDApp.get_running_app().root.get_screen('main').ids.M.text) #1
+        H = float(MDApp.get_running_app().root.get_screen('main').ids.H.text) #300
         sigmaVH = -0.169714286*Mp+1.213523810
         if sigmaVH > 1:
             sigmaVH = 1
-        Gpr = 26
+        Gpr = float(MDApp.get_running_app().root.get_screen('main').ids.Gpr.text) #26
         Pn = 97770.861
         Tn = 286.21
         an = 320
         k = 1.4
-        Tg = 1600
+        Tg = float(MDApp.get_running_app().root.get_screen('main').ids.Tg.text) #1600
         sigmaKS = 0.95
         kpdTK = 0.9
         kpdTTK = 0.99
@@ -130,7 +130,7 @@ class GTDcalc(MDApp):
         Ttk = Tg*(1-Xtk*kpdTK)
         #
         #print(Xtk, "\t",piTK, "\t",Ttk,"\t", Ptk, "\t")
-        #
+        #messages.PyBundle
         #############################################################################
         #TB
 
@@ -149,7 +149,7 @@ class GTDcalc(MDApp):
         x=["Н", "B", "BH", "K", "Г", "TK", "T"]#, "C"]
         t=[Tn, Tvh, Tvn, Tk, Tg, Ttk, Tt]#, Tc]
         p=[Pn, Pvh, Pvn, Pk, Pg, Ptk, Pt]#, Pc]
-        #plt.remove()
+
         plt.plot(x,p,x,t)
         plt.grid()
         plotShow.ids.expense_graph.add_widget(FigureCanvasKivyAgg(figure=plt.gcf()))
