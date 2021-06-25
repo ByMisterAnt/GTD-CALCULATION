@@ -1,4 +1,4 @@
-screen_helper = """
+screens = """
 ScreenManager:
     MainScreen:
     ResultScreen:
