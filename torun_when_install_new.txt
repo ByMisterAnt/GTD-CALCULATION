@@ -29,4 +29,4 @@ pip install numpy
 
 #buildozer android clean
 buildozer init
-buildozer android debug deploy run logconf
+buildozer android debug deploy run logcat
