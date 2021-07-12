@@ -1,0 +1,20 @@
+sudo apt install git
+sudo apt install openjdk-11-jdk
+sudo apt install cython
+sudo apt install openjdk-13-jdk-headless
+sudo apt install make
+sudo apt install autoconf
+sudo apt install libltdl-dev
+sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev zlib1g-dev libssl-dev openssl libgdbm-dev libgdbm-compat-dev liblzma-dev libreadline-dev libncursesw5-dev libffi-dev uuid-dev
+python3 -m pip install --upgrade pip setuptools virtualenv
+sudo apt install python3.7
+
+sudo apt install python3-distutils
+
+pip install cython
+
+
+buildozer android clean
+buildozer android debug deploy run
+
+
