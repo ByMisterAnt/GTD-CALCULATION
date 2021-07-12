@@ -27,5 +27,6 @@ garden install graph
 garden install matplotlib
 
 
-buildozer android clean
-buildozer android debug deploy run
+#buildozer android clean
+buildozer init
+buildozer android debug deploy run logconf
