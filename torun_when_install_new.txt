@@ -1,3 +1,14 @@
+sudo apt update
+sudo apt upgrade
+sudo apt install python3-distutils
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.7
+
+
+
+
+pip install kivy
 sudo apt install git
 sudo apt install openjdk-11-jdk
 sudo apt install cython
@@ -6,15 +17,15 @@ sudo apt install make
 sudo apt install autoconf
 sudo apt install libltdl-dev
 sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev zlib1g-dev libssl-dev openssl libgdbm-dev libgdbm-compat-dev liblzma-dev libreadline-dev libncursesw5-dev libffi-dev uuid-dev
-python3 -m pip install --upgrade pip setuptools virtualenv
-sudo apt install python3.7
-
-sudo apt install python3-distutils
-
+#python3 -m pip install --upgrade pip setuptools virtualenv
+apt install python3-pip
 pip install cython
+pip install matplotlib
+pip install buildozer
+pip install kivy-garden
+garden install graph
+garden install matplotlib
 
 
 buildozer android clean
 buildozer android debug deploy run
-
-
