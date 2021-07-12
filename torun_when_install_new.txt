@@ -25,7 +25,7 @@ pip install buildozer
 pip install kivy-garden
 garden install graph
 garden install matplotlib
-
+pip install numpy
 
 #buildozer android clean
 buildozer init
